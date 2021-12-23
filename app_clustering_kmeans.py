@@ -17,6 +17,7 @@ poverty = pd.read_csv('data/poverty.csv', low_memory=False)
 
 #initiating the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.COSMO])
+server=app.server
 
 app.layout = html.Div([
     html.Br(),
