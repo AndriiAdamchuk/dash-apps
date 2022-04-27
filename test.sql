@@ -4,7 +4,7 @@ select
     client_city,
     client_country,
     sum(revenue_total) as revenue_total,
-    date_trunc('day', period) period
+    date_trunc('day', period) as period
 from reports.clients
 group by 1, 2, 3, 4
 order by 1 asc;
