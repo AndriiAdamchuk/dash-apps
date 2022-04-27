@@ -6,7 +6,7 @@ name: Lint Code Base
 #
 
 on:
-  pull_request:
+  push:
     branches: [master, main]
 
 jobs:
