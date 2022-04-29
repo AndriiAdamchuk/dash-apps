@@ -12,6 +12,8 @@ jobs:
     if: contains(github.event.comment.body, '/revert')
 
     steps:
+      - name: work around permission issue
+        run: git config --global --add safe.directory /github/dash-apps
       - name: Checkout latest code
         uses: actions/checkout@v2
       - name: Automatic Revert
