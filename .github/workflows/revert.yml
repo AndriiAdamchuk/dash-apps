@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: work around permission issue
-        run: git config --global --add safe.directory /github/dash-apps
+        run: git config --global --add safe.directory /__w/dash-apps/dash-apps
       - name: Checkout latest code
         uses: actions/checkout@v2
       - name: Automatic Revert
